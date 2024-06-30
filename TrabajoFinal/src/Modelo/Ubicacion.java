@@ -8,9 +8,8 @@ package Modelo;
  *
  * @author Josue
  */
-class Ubicacion
+public class Ubicacion
 {
-  Universidad universidad;
   String Departamento;
   String Provincia;
   String Distrito;
@@ -19,8 +18,7 @@ class Ubicacion
   String Longitud;
   
   //constructor
-  public Ubicacion(Universidad universidad, String Departamento, String Provincia, String Distrito, String Ubigeo, String Latitud, String Longitud){
-    this.universidad = universidad;
+  public Ubicacion(String Departamento, String Provincia, String Distrito, String Ubigeo, String Latitud, String Longitud){
     this.Departamento = Departamento;
     this.Provincia = Provincia;
     this.Distrito = Distrito;
@@ -30,10 +28,6 @@ class Ubicacion
   }
   
   // Getters
-  public String getUniversidad(){
-    return universidad.getNombre();
-  }
-  
   public String getDepartamento(){
   	return Departamento;
   }

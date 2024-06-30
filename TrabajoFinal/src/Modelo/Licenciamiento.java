@@ -8,36 +8,31 @@ package Modelo;
  *
  * @author Josue
  */
-class Licenciamiento
+public class Licenciamiento
 {
-  Universidad universidad;
-  boolean Estado;
-  double FechaInicio;
-  double FechaFin;
+  String Estado;
+  String FechaInicio;
+  String FechaFin;
   
   //constructor
-  public Licenciamiento(Universidad universidad, boolean Estado, double FechaInicio, double FechaFin){
-    this.universidad = universidad;
+  public Licenciamiento(String Estado, String FechaInicio, String FechaFin){
     this.Estado = Estado;
     this.FechaInicio = FechaInicio;
     this.FechaFin = FechaFin;
   }
   
   // Getters
-  public String getUniversidad(){
-    return universidad.getNombre();
-  }
   
   public String getEstado(){
-    return Estado+"";
+    return Estado;
   }
   
   public String getFechaInicio(){
-  	return FechaInicio+"";
+  	return FechaInicio;
   }
   
   public String getFechaFin(){
-  	return FechaFin+"";
+  	return FechaFin;
   }
   
 }

@@ -8,14 +8,14 @@ package Modelo;
  *
  * @author Josue
  */
-class Universidad
+public class Universidad
 {
   String Nombre;
   String TipoDeGestion;
-  double FechaCorte;
+  String FechaCorte;
   
   //constructor
-  public Universidad(String Nombre, String TipoDeGestion, double FechaCorte) {
+  public Universidad(String Nombre, String TipoDeGestion, String FechaCorte) {
     this.Nombre = Nombre;
     this.TipoDeGestion = TipoDeGestion;
     this.FechaCorte = FechaCorte;
@@ -30,7 +30,7 @@ class Universidad
     return TipoDeGestion;
   }
   
-  public String FechaCorte() {
-    return FechaCorte+"";
+  public String getFechaCorte() {
+    return FechaCorte;
   }
 }
