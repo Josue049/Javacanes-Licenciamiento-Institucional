@@ -10,13 +10,11 @@ import Modelo.Ubicacion;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Scanner;
 /**
  *
  * @author Josue
  */
 public class ControladorReportes {
-    Scanner lector=new Scanner(System.in);
     int lineas = 144;
     Universidad[] universidades = new Universidad[lineas-1];
     Licenciamiento[] licenciamientos = new Licenciamiento[lineas-1];
